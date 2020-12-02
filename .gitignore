@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local folders
+data/
+venv/
+.vscode/
+*.ipynb_checkpoints/
+*/__pycache__
+*.pyc
+
+predictions/
+prescriptions/
+
+# Run the respective notebooks to download the data, train and persist the models and generate the predictions
+covid-xprize/covid_xprize/examples/predictors/linear/data/
+covid-xprize/covid_xprize/examples/predictors/linear/models/
+covid-xprize/covid_xprize/examples/predictors/linear/predictions/
+
+covid-xprize/covid_xprize/examples/predictors/lstm/data/OxCGRT_latest.csv
+covid-xprize/covid_xprize/examples/predictors/lstm/models/
+covid-xprize/covid_xprize/examples/predictors/lstm/predictions/
+covid-xprize/covid_xprize/examples/predictors/lstm/tests/fixtures/OxCGRT_latest.csv
+covid-xprize/covid_xprize/examples/prescriptors/neat/prescriptions/
+covid-xprize/covid_xprize/examples/prescriptors/random/prescriptions/
+covid-xprize/covid_xprize/examples/prescriptors/zero/prescriptions/
+covid-xprize/covid_xprize/validation/tests/fixtures/OxCGRT_latest.csv
