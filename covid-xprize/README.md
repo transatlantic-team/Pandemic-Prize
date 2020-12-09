@@ -132,7 +132,7 @@ this call.
 
 
 ## More information/Support
-For more information and support, refer to the [competition guidelines](https://xprize.org/pandemicresponse)
+For more information and support, refer to the [competition guidelines](](https://xprize.org/pandemicresponse)) 
 or post your questions in the support Slack channel; you should have gained access to both of these when you created a 
 login in the competition platform.
 

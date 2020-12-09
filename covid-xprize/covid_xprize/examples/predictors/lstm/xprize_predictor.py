@@ -6,13 +6,6 @@ import urllib.request
 # Suppress noisy Tensorflow debug logging
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
-# Fix for LSTM: https://github.com/tensorflow/tensorflow/issues/36508#issuecomment-584898603
-import tensorflow as tf
-physical_devices = tf.config.list_physical_devices('GPU')
-tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
-
-
-
 # noinspection PyPep8Naming
 import keras.backend as K
 import numpy as np
@@ -34,6 +27,7 @@ DATA_FILE_PATH = os.path.join(DATA_PATH, 'OxCGRT_latest.csv')
 ADDITIONAL_CONTEXT_FILE = os.path.join(DATA_PATH, "Additional_Context_Data_Global.csv")
 ADDITIONAL_US_STATES_CONTEXT = os.path.join(DATA_PATH, "US_states_populations.csv")
 ADDITIONAL_UK_CONTEXT = os.path.join(DATA_PATH, "uk_populations.csv")
+ADDITIONAL_BRAZIL_CONTEXT = os.path.join(DATA_PATH, "brazil_populations.csv")
 
 NPI_COLUMNS = ['C1_School closing',
                'C2_Workplace closing',
@@ -284,6 +278,11 @@ class XPrizePredictor(object):
         additional_uk_df = pd.read_csv(ADDITIONAL_UK_CONTEXT)
         # Append the new data to additional_df
         additional_context_df = additional_context_df.append(additional_uk_df)
+
+        # Brazil population
+        additional_brazil_df = pd.read_csv(ADDITIONAL_BRAZIL_CONTEXT)
+        # Append the new data to additional_df
+        additional_context_df = additional_context_df.append(additional_brazil_df)
 
         return additional_context_df
 
