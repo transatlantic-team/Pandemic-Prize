@@ -5,6 +5,8 @@ __pycache__/
 
 # Local folders
 data/
+refs/
+owid-data/
 venv/
 .vscode/
 *.ipynb_checkpoints/
@@ -27,3 +29,11 @@ covid-xprize/covid_xprize/examples/prescriptors/neat/prescriptions/
 covid-xprize/covid_xprize/examples/prescriptors/random/prescriptions/
 covid-xprize/covid_xprize/examples/prescriptors/zero/prescriptions/
 covid-xprize/covid_xprize/validation/tests/fixtures/OxCGRT_latest.csv
+
+.DS_Store
+*.csv
+covid-xprize/covid_xprize.egg-info/dependency_links.txt
+covid-xprize/covid_xprize.egg-info/PKG-INFO
+covid-xprize/covid_xprize.egg-info/requires.txt
+covid-xprize/covid_xprize.egg-info/SOURCES.txt
+covid-xprize/covid_xprize.egg-info/top_level.txt
