@@ -2,8 +2,11 @@
 
 import argparse
 import os
+import tensorflow as tf
+physical_devices = tf.config.list_physical_devices('GPU')
+tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 
-from covid_xprize.examples.predictors.lstm.xprize_predictor import XPrizePredictor
+from xprize_predictor import XPrizePredictor
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 

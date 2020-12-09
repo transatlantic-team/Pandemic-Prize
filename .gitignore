@@ -2,12 +2,14 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.vscode/
 
 # Local folders
 data/
 refs/
 owid-data/
 venv/
+dev/
 .vscode/
 *.ipynb_checkpoints/
 */__pycache__
