@@ -27,7 +27,7 @@ DATA_FILE_PATH = os.path.join(DATA_PATH, 'OxCGRT_latest.csv')
 ADDITIONAL_CONTEXT_FILE = os.path.join(DATA_PATH, "Additional_Context_Data_Global.csv")
 ADDITIONAL_US_STATES_CONTEXT = os.path.join(DATA_PATH, "US_states_populations.csv")
 ADDITIONAL_UK_CONTEXT = os.path.join(DATA_PATH, "uk_populations.csv")
-ADDITIONAL_BRAZIL_CONTEXT = os.path.join(DATA_PATH, "brazil_populations.csv")
+# ADDITIONAL_BRAZIL_CONTEXT = os.path.join(DATA_PATH, "brazil_populations.csv")
 
 NPI_COLUMNS = ['C1_School closing',
                'C2_Workplace closing',
@@ -85,7 +85,7 @@ class XPrizePredictor(object):
                                                       nb_action=nb_action,
                                                       lstm_size=LSTM_SIZE,
                                                       nb_lookback_days=NB_LOOKBACK_DAYS)
-            self.predictor.load_weights(path_to_model_weights)
+            # self.predictor.load_weights(path_to_model_weights)
 
             # Make sure data is available to make predictions
             if not os.path.exists(DATA_FILE_PATH):
@@ -279,10 +279,10 @@ class XPrizePredictor(object):
         # Append the new data to additional_df
         additional_context_df = additional_context_df.append(additional_uk_df)
 
-        # Brazil population
-        additional_brazil_df = pd.read_csv(ADDITIONAL_BRAZIL_CONTEXT)
-        # Append the new data to additional_df
-        additional_context_df = additional_context_df.append(additional_brazil_df)
+#         # Brazil population
+#         additional_brazil_df = pd.read_csv(ADDITIONAL_BRAZIL_CONTEXT)
+#         # Append the new data to additional_df
+#         additional_context_df = additional_context_df.append(additional_brazil_df)
 
         return additional_context_df
 
