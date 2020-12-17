@@ -32,8 +32,4 @@ covid-xprize/covid_xprize/validation/tests/fixtures/OxCGRT_latest.csv
 
 .DS_Store
 *.csv
-covid-xprize/covid_xprize.egg-info/dependency_links.txt
-covid-xprize/covid_xprize.egg-info/PKG-INFO
-covid-xprize/covid_xprize.egg-info/requires.txt
-covid-xprize/covid_xprize.egg-info/SOURCES.txt
-covid-xprize/covid_xprize.egg-info/top_level.txt
+*.egg-info/
