@@ -45,7 +45,7 @@ def preprocess_historical_basic(df, cases_col=CASES_COL, npi_cols=NPI_COLS):
     return df
 
 
-def dataframe_to_array(df, nb_lookback_days=30, sequence_format=False, cases_col=CASES_COL, npi_cols=NPI_COLS, neg_npis=True):
+def dataframe_to_array(df, nb_lookback_days=30, nb_lookahead_days=30, sequence_format=False, cases_col=CASES_COL, npi_cols=NPI_COLS, neg_npis=True):
     """Process dataframe to return an array formated for a training procedure.
 
     Args:
@@ -74,7 +74,7 @@ def dataframe_to_array(df, nb_lookback_days=30, sequence_format=False, cases_col
         # Create one sample for each day where we have enough data
         # Each sample consists of cases and npis for previous nb_lookback_days
         nb_total_days = len(gdf)
-        for d in range(nb_lookback_days, nb_total_days - 1):
+        for d in range(nb_lookback_days, nb_total_days - 1 - nb_lookahead_days):
             X_cases = all_case_data[d - nb_lookback_days : d]
 
             X_npis = all_npi_data[d - nb_lookback_days : d]
@@ -90,7 +90,8 @@ def dataframe_to_array(df, nb_lookback_days=30, sequence_format=False, cases_col
                 # Flatten all input data so it fits Lasso input format.
                 # Shape (nb_lookback_days * feature_size)
                 X_sample = np.concatenate([X_cases.flatten(), X_npis.flatten()])
-            y_sample = all_case_data[d + 1]
+#             y_sample = all_case_data[d + 1]
+            y_sample = all_case_data[d+1:d+1+nb_lookahead_days]
             X_samples.append(X_sample)
             y_samples.append(y_sample)
 
@@ -98,7 +99,8 @@ def dataframe_to_array(df, nb_lookback_days=30, sequence_format=False, cases_col
 
     y_samples = np.array(y_samples)
     if sequence_format:
-        y_samples = y_samples.reshape(-1, 1, 1)
+#         y_samples = y_samples.reshape(-1, nb_lookahead_days, 1)
+        pass
     else:
         y_samples = y_samples.flatten()
 
