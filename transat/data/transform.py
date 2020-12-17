@@ -1,6 +1,7 @@
 import numpy as np
 
-CASES_COL = ["NewCases"]
+# CASES_COL = ["NewCases"]
+CASES_COL = ["NewCasesSmoothed7Days"]
 NPI_COLS = [
     "C1_School closing",
     "C2_Workplace closing",
@@ -27,9 +28,12 @@ def preprocess_historical_basic(df, cases_col=CASES_COL, npi_cols=NPI_COLS):
 
     # Add new cases column
     df["NewCases"] = df.groupby("GeoID").ConfirmedCases.diff().fillna(0)
+    df.loc[df.NewCases < 0, "NewCases"] = 0
+
+    df["NewCasesSmoothed7Days"] = df.groupby("GeoID").NewCases.rolling(7, win_type="boxcar").mean().fillna(0).reset_index(level=0, drop=True) #.reset_index()
 
     # Keep only columns of interest
-    id_cols = ["CountryName", "RegionName", "GeoID", "Date"]
+    id_cols = ["CountryName", "RegionName", "GeoID", "Date", "NewCases"]
 
     df = df[id_cols + cases_col + npi_cols]
 
