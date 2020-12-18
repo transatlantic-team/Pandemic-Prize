@@ -36,3 +36,22 @@ def load_historical(file=DATA_FILE):
         error_bad_lines=False)
     return df
 
+def load_removed_GeoID():
+    """Load dataframe of removed GeoID
+    """
+    m_path = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(m_path, "assets", "removed_geoid.csv")
+
+    df = pd.read_csv(csv_path)
+
+    return df
+
+def load_population():
+    """Load dataframe of populations
+    """
+    m_path = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(m_path, "assets", "geoid_population_regions.csv")
+
+    df = pd.read_csv(csv_path)
+
+    return df

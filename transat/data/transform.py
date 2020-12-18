@@ -1,4 +1,8 @@
+import os
 import numpy as np
+import pandas as pd
+
+from transat.data.load import load_removed_GeoID, load_population
 
 # CASES_COL = ["NewCases"]
 CASES_COL = ["NewCasesSmoothed7Days"]
@@ -19,8 +23,21 @@ NPI_COLS = [
 #     "NewCasesSmoothed14Days"
 ]
 
+def remove_geoid(df):
+    """Remove some GeoID not considered for the competition"""
+    df_rem_GeoID = load_removed_GeoID()
+    return  df[~df.GeoID.isin(df_rem_GeoID.GeoID)]
 
-def preprocess_historical_basic(df, cases_col=CASES_COL, npi_cols=NPI_COLS):
+def normalize_by_population(df, columns):
+    df_pop = load_population()
+
+    geoid_to_pop = {g:p for g,p in zip(df_pop.GeoID, df_pop.Population)}
+
+    for geoid in df.GeoID.unique():
+        df.loc[df.GeoID == geoid, columns] /= geoid_to_pop[geoid]
+
+
+def preprocess_historical_basic(df, cases_col=CASES_COL, npi_cols=NPI_COLS, norm_npis=True, norm_by_pop=True):
     """Create a copy of preprocessed data."""
 
     df = df.copy()
@@ -28,19 +45,22 @@ def preprocess_historical_basic(df, cases_col=CASES_COL, npi_cols=NPI_COLS):
     # Add RegionID column that combines CountryName and RegionName for easier manipulation of data
     df["GeoID"] = df["CountryName"] + "__" + df["RegionName"].astype(str)
 
+    # Remove GeoID not considered in the competition
+    df = remove_geoid(df)
+
     # Add new cases column
     df["NewCases"] = df.groupby("GeoID").ConfirmedCases.diff().fillna(0)
     df.loc[df.NewCases < 0, "NewCases"] = 0
 
     df["NewCasesSmoothed7Days"] = df.groupby("GeoID").NewCases.rolling(7, win_type="boxcar").mean().fillna(0).reset_index(level=0, drop=True) #.reset_index()
-    
+
 #     df["NewCasesSmoothed14Days"] = df.groupby("GeoID").NewCases.rolling(14, win_type="boxcar").mean().fillna(0).reset_index(level=0, drop=True)
-    
-#     norm_cols = ["C1_School closing", "C2_Workplace closing", "C3_Cancel public events", "C4_Restrictions on gatherings",
-#         "C5_Close public transport", "C6_Stay at home requirements", "C7_Restrictions on internal movement", 
-#         "C8_International travel controls"]
-#     df[norm_cols] /= 4
-    
+
+    if norm_npis:
+        df[NPI_COLS] /= 4
+
+    if norm_by_pop:
+        normalize_by_population(df, cases_col)
 
     # Keep only columns of interest
     id_cols = ["CountryName", "RegionName", "GeoID", "Date", "NewCases"]
@@ -119,3 +139,6 @@ def dataframe_to_array(df, nb_lookback_days=30, nb_lookahead_days=30, sequence_f
         y_samples = y_samples.flatten()
 
     return (X_samples, y_samples), (X_cols, y_col)
+
+
+
