@@ -15,6 +15,8 @@ NPI_COLS = [
     "H2_Testing policy",
     "H3_Contact tracing",
     "H6_Facial Coverings",
+#     "StringencyIndex",
+#     "NewCasesSmoothed14Days"
 ]
 
 
@@ -31,6 +33,14 @@ def preprocess_historical_basic(df, cases_col=CASES_COL, npi_cols=NPI_COLS):
     df.loc[df.NewCases < 0, "NewCases"] = 0
 
     df["NewCasesSmoothed7Days"] = df.groupby("GeoID").NewCases.rolling(7, win_type="boxcar").mean().fillna(0).reset_index(level=0, drop=True) #.reset_index()
+    
+#     df["NewCasesSmoothed14Days"] = df.groupby("GeoID").NewCases.rolling(14, win_type="boxcar").mean().fillna(0).reset_index(level=0, drop=True)
+    
+#     norm_cols = ["C1_School closing", "C2_Workplace closing", "C3_Cancel public events", "C4_Restrictions on gatherings",
+#         "C5_Close public transport", "C6_Stay at home requirements", "C7_Restrictions on internal movement", 
+#         "C8_International travel controls"]
+#     df[norm_cols] /= 4
+    
 
     # Keep only columns of interest
     id_cols = ["CountryName", "RegionName", "GeoID", "Date", "NewCases"]
