@@ -7,6 +7,7 @@ import urllib.request
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # noinspection PyPep8Naming
+import tensorflow as tf
 import tensorflow.keras.backend as K
 import numpy as np
 import pandas as pd
@@ -53,15 +54,16 @@ NB_LOOKBACK_DAYS = 21
 NB_TEST_DAYS = 14
 WINDOW_SIZE = 7
 US_PREFIX = "United States / "
-NUM_TRIALS = 20
+NUM_TRIALS = 1
 LSTM_SIZE = 32
 MAX_NB_COUNTRIES = 20
-
+EPOCHS = 100
+VERBOSE = 1
 
 class Positive(Constraint):
 
     def __call__(self, w):
-        return K.abs(w)
+        return tf.abs(w)
 
 
 # Functions to be used for lambda layers in model
@@ -434,7 +436,7 @@ class XPrizePredictor(object):
                                                           nb_action=X_action.shape[-1],
                                                           lstm_size=LSTM_SIZE,
                                                           nb_lookback_days=NB_LOOKBACK_DAYS)
-            history = self._train_model(training_model, X_context, X_action, y, epochs=1000, verbose=0)
+            history = self._train_model(training_model, X_context, X_action, y, epochs=EPOCHS, verbose=VERBOSE)
             top_epoch = np.argmin(history.history['val_loss'])
             train_loss = history.history['loss'][top_epoch]
             val_loss = history.history['val_loss'][top_epoch]
