@@ -7,16 +7,16 @@ import urllib.request
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # noinspection PyPep8Naming
-import keras.backend as K
+import tensorflow.keras.backend as K
 import numpy as np
 import pandas as pd
-from keras.callbacks import EarlyStopping
-from keras.constraints import Constraint
-from keras.layers import Dense
-from keras.layers import Input
-from keras.layers import LSTM
-from keras.layers import Lambda
-from keras.models import Model
+from tensorflow.keras.callbacks import EarlyStopping
+from tensorflow.keras.constraints import Constraint
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.layers import Input
+from tensorflow.keras.layers import LSTM
+from tensorflow.keras.layers import Lambda
+from tensorflow.keras.models import Model
 
 # See https://github.com/OxCGRT/covid-policy-tracker
 DATA_URL = "https://raw.githubusercontent.com/OxCGRT/covid-policy-tracker/master/data/OxCGRT_latest.csv"
