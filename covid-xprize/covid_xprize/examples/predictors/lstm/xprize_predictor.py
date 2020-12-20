@@ -53,7 +53,7 @@ NB_LOOKBACK_DAYS = 21
 NB_TEST_DAYS = 14
 WINDOW_SIZE = 7
 US_PREFIX = "United States / "
-NUM_TRIALS = 1
+NUM_TRIALS = 20
 LSTM_SIZE = 32
 MAX_NB_COUNTRIES = 20
 
@@ -85,7 +85,7 @@ class XPrizePredictor(object):
                                                       nb_action=nb_action,
                                                       lstm_size=LSTM_SIZE,
                                                       nb_lookback_days=NB_LOOKBACK_DAYS)
-            # self.predictor.load_weights(path_to_model_weights)
+            self.predictor.load_weights(path_to_model_weights)
 
             # Make sure data is available to make predictions
             if not os.path.exists(DATA_FILE_PATH):
