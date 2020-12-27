@@ -32,5 +32,5 @@ covid-xprize/covid_xprize/examples/prescriptors/zero/prescriptions/
 covid-xprize/covid_xprize/validation/tests/fixtures/OxCGRT_latest.csv
 
 .DS_Store
-*.csv
+
 *.egg-info/
