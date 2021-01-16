@@ -1,237 +1,237 @@
-CountryName,RegionName,romain-lasso,romain-ridge,stacking-lasso-ridge-linearSVR,stacking-lassocv-ridgecv-w=21
-Afghanistan,,3,1,2,0
-Albania,,3,2,0,1
-Algeria,,3,2,1,0
-Andorra,,3,2,1,0
-Angola,,3,0,2,1
-Argentina,,0,3,2,1
-Aruba,,3,1,2,0
-Australia,,3,2,1,0
-Austria,,0,3,2,1
-Azerbaijan,,0,3,2,1
-Bahamas,,2,1,3,0
-Bahrain,,3,2,1,0
-Bangladesh,,3,0,2,1
-Barbados,,0,1,2,3
-Belarus,,0,3,2,1
-Belgium,,0,1,2,3
-Belize,,2,1,3,0
-Benin,,3,0,1,2
-Bermuda,,3,0,1,2
-Bhutan,,3,0,1,2
-Bolivia,,2,1,3,0
-Bosnia and Herzegovina,,0,3,2,1
-Botswana,,1,2,3,0
-Brazil,,0,3,2,1
-Brunei,,0,1,2,3
-Bulgaria,,0,1,2,3
-Burkina Faso,,3,2,1,0
-Burundi,,0,1,2,3
-Cambodia,,3,0,1,2
-Cameroon,,3,2,1,0
-Canada,,3,1,0,2
-Cape Verde,,3,2,1,0
-Central African Republic,,3,0,1,2
-Chad,,0,1,2,3
-Chile,,2,1,3,0
-China,,3,2,1,0
-Colombia,,0,1,2,3
-Comoros,,3,0,1,2
-Congo,,1,2,3,0
-Costa Rica,,0,3,2,1
-Cote d'Ivoire,,2,3,1,0
-Croatia,,0,2,1,3
-Cuba,,3,2,1,0
-Cyprus,,3,2,1,0
-Czech Republic,,0,3,1,2
-Democratic Republic of Congo,,3,2,1,0
-Denmark,,1,2,3,0
-Djibouti,,3,0,1,2
-Dominica,,0,1,2,3
-Dominican Republic,,0,3,2,1
-Ecuador,,3,0,2,1
-Egypt,,3,2,1,0
-El Salvador,,3,2,1,0
-Eritrea,,0,1,2,3
-Estonia,,2,3,1,0
-Eswatini,,2,3,1,0
-Ethiopia,,0,3,1,2
-Faeroe Islands,,0,1,2,3
-Fiji,,3,0,1,2
-Finland,,3,2,0,1
-France,,0,2,3,1
-Gabon,,0,1,2,3
-Gambia,,3,1,2,0
-Georgia,,0,3,1,2
-Germany,,0,1,3,2
-Ghana,,1,2,3,0
-Greece,,3,2,0,1
-Greenland,,0,1,2,3
-Guam,,3,1,2,0
-Guatemala,,2,3,1,0
-Guinea,,3,2,1,0
-Guyana,,3,1,2,0
-Haiti,,1,2,3,0
-Honduras,,2,1,3,0
-Hong Kong,,0,1,2,3
-Hungary,,0,3,1,2
-Iceland,,3,2,1,0
-India,,2,1,3,0
-Indonesia,,2,3,1,0
-Iran,,0,3,1,2
-Iraq,,2,1,3,0
-Ireland,,0,3,2,1
-Israel,,1,2,3,0
-Italy,,0,3,1,2
-Jamaica,,2,3,1,0
-Japan,,2,1,3,0
-Jordan,,3,1,2,0
-Kazakhstan,,3,2,1,0
-Kenya,,0,3,2,1
-Kosovo,,3,2,1,0
-Kuwait,,3,0,2,1
-Kyrgyz Republic,,0,3,2,1
-Laos,,3,0,1,2
-Latvia,,3,2,1,0
-Lebanon,,2,1,0,3
-Lesotho,,2,1,3,0
-Liberia,,0,1,2,3
-Libya,,0,3,2,1
-Lithuania,,2,3,1,0
-Luxembourg,,3,2,1,0
-Macao,,0,1,2,3
-Madagascar,,2,1,3,0
-Malawi,,3,0,1,2
-Malaysia,,0,3,2,1
-Mali,,3,2,1,0
-Mauritania,,3,2,1,0
-Mauritius,,3,0,1,2
-Mexico,,0,3,2,1
-Moldova,,0,2,3,1
-Monaco,,3,0,1,2
-Mongolia,,0,1,2,3
-Morocco,,0,3,2,1
-Mozambique,,1,2,3,0
-Myanmar,,0,3,2,1
-Namibia,,3,2,1,0
-Nepal,,0,3,1,2
-Netherlands,,1,3,2,0
-New Zealand,,0,1,2,3
-Nicaragua,,3,2,1,0
-Niger,,0,1,2,3
-Nigeria,,2,1,3,0
-Norway,,3,2,1,0
-Oman,,0,3,2,1
-Pakistan,,3,2,1,0
-Palestine,,3,0,2,1
-Panama,,3,2,1,0
-Papua New Guinea,,3,0,1,2
-Paraguay,,3,2,0,1
-Peru,,2,3,1,0
-Philippines,,0,3,2,1
-Poland,,1,3,2,0
-Portugal,,0,3,2,1
-Puerto Rico,,1,2,3,0
-Qatar,,3,2,1,0
-Romania,,0,3,1,2
-Russia,,1,3,2,0
-Rwanda,,3,2,1,0
-San Marino,,3,0,1,2
-Saudi Arabia,,3,2,1,0
-Senegal,,3,2,1,0
-Serbia,,3,2,1,0
-Seychelles,,3,0,1,2
-Sierra Leone,,3,0,1,2
-Singapore,,2,1,3,0
-Slovak Republic,,0,3,1,2
-Slovenia,,0,3,2,1
-Solomon Islands,,0,1,2,3
-Somalia,,3,2,1,0
-South Africa,,0,3,2,1
-South Korea,,3,2,1,0
-South Sudan,,0,1,2,3
-Spain,,0,3,2,1
-Sri Lanka,,1,2,0,3
-Sudan,,2,3,1,0
-Suriname,,1,2,3,0
-Sweden,,0,2,3,1
-Switzerland,,0,2,3,1
-Syria,,2,3,1,0
-Taiwan,,0,1,2,3
-Tajikistan,,1,2,3,0
-Tanzania,,0,1,2,3
-Thailand,,3,0,1,2
-Timor-Leste,,3,0,1,2
-Togo,,2,1,3,0
-Trinidad and Tobago,,3,2,1,0
-Tunisia,,0,3,2,1
-Turkey,,0,3,2,1
-Uganda,,3,2,1,0
-Ukraine,,0,3,1,2
-United Arab Emirates,,0,3,1,2
-United Kingdom,,3,1,2,0
-United Kingdom,England,1,3,2,0
-United Kingdom,Northern Ireland,1,3,2,0
-United Kingdom,Scotland,0,3,1,2
-United Kingdom,Wales,0,3,1,2
-United States,,0,1,2,3
-United States,Alabama,2,3,1,0
-United States,Alaska,3,2,1,0
-United States,Arizona,0,2,1,3
-United States,Arkansas,3,2,1,0
-United States,California,3,2,1,0
-United States,Colorado,0,3,2,1
-United States,Connecticut,0,3,2,1
-United States,Delaware,3,2,1,0
-United States,Florida,0,2,3,1
-United States,Georgia,0,3,2,1
-United States,Hawaii,2,3,1,0
-United States,Idaho,0,3,1,2
-United States,Illinois,0,1,3,2
-United States,Indiana,0,3,1,2
-United States,Iowa,0,3,2,1
-United States,Kansas,0,3,2,1
-United States,Kentucky,0,3,1,2
-United States,Louisiana,0,3,2,1
-United States,Maine,3,2,1,0
-United States,Maryland,0,3,2,1
-United States,Massachusetts,3,0,1,2
-United States,Michigan,0,3,2,1
-United States,Minnesota,0,3,1,2
-United States,Mississippi,0,3,2,1
-United States,Missouri,0,3,2,1
-United States,Montana,0,3,2,1
-United States,Nebraska,0,3,2,1
-United States,Nevada,3,2,1,0
-United States,New Hampshire,3,1,2,0
-United States,New Jersey,0,3,1,2
-United States,New Mexico,0,3,2,1
-United States,New York,0,3,1,2
-United States,North Carolina,0,2,3,1
-United States,North Dakota,0,3,2,1
-United States,Ohio,0,1,3,2
-United States,Oklahoma,0,3,2,1
-United States,Oregon,3,2,1,0
-United States,Pennsylvania,0,3,1,2
-United States,Rhode Island,0,3,2,1
-United States,South Carolina,3,0,2,1
-United States,South Dakota,0,3,2,1
-United States,Tennessee,0,3,2,1
-United States,Texas,0,2,1,3
-United States,Utah,0,3,2,1
-United States,Vermont,0,1,2,3
-United States,Virgin Islands,3,0,1,2
-United States,Virginia,0,3,2,1
-United States,Washington,3,0,2,1
-United States,Washington DC,3,2,1,0
-United States,West Virginia,3,2,1,0
-United States,Wisconsin,0,2,3,1
-United States,Wyoming,3,2,1,0
-Uruguay,,2,3,1,0
-Uzbekistan,,2,1,3,0
-Vanuatu,,0,1,2,3
-Venezuela,,3,2,1,0
-Vietnam,,3,0,1,2
-Yemen,,3,0,1,2
-Zambia,,3,2,1,0
-Zimbabwe,,3,1,2,0
+CountryName,RegionName,lstm_baseline_pred10-01_10-31,random_forest,romain-lasso,romain-ridge,stacking-lasso-ridge-linearSVR,stacking-lassocv-ridgecv-w=21
+Afghanistan,,5,3,4,1,2,0
+Albania,,5,4,2,3,0,1
+Algeria,,5,4,3,2,0,1
+Andorra,,5,1,4,3,0,2
+Angola,,0,5,1,2,4,3
+Argentina,,2,5,4,3,1,0
+Aruba,,0,1,5,3,4,2
+Australia,,0,5,4,3,1,2
+Austria,,2,5,4,3,0,1
+Azerbaijan,,2,5,4,3,0,1
+Bahamas,,4,1,3,5,0,2
+Bahrain,,5,4,3,0,2,1
+Bangladesh,,5,2,4,3,1,0
+Barbados,,2,3,4,5,0,1
+Belarus,,2,5,4,3,0,1
+Belgium,,2,3,4,5,1,0
+Belize,,1,4,3,5,0,2
+Benin,,5,2,3,4,0,1
+Bermuda,,5,2,3,4,0,1
+Bhutan,,5,2,3,4,0,1
+Bolivia,,4,3,5,2,1,0
+Bosnia and Herzegovina,,2,5,4,0,3,1
+Botswana,,3,4,5,0,2,1
+Brazil,,2,5,4,3,0,1
+Brunei,,0,2,3,4,5,1
+Bulgaria,,2,3,4,5,0,1
+Burkina Faso,,1,5,4,3,2,0
+Burundi,,2,3,4,5,0,1
+Cambodia,,5,2,3,4,0,1
+Cameroon,,5,4,3,1,0,2
+Canada,,5,3,2,4,0,1
+Cape Verde,,5,4,3,1,0,2
+Central African Republic,,0,5,2,3,4,1
+Chad,,2,3,4,5,0,1
+Chile,,4,3,5,2,0,1
+China,,0,5,4,1,3,2
+Colombia,,2,3,4,5,0,1
+Comoros,,5,2,3,4,0,1
+Congo,,3,4,0,5,2,1
+Costa Rica,,1,2,5,4,3,0
+Cote d'Ivoire,,1,0,4,5,3,2
+Croatia,,2,4,3,5,0,1
+Cuba,,1,5,4,3,2,0
+Cyprus,,5,4,3,0,2,1
+Czech Republic,,2,5,3,4,0,1
+Democratic Republic of Congo,,5,4,3,1,2,0
+Denmark,,3,4,5,2,0,1
+Djibouti,,5,2,3,4,0,1
+Dominica,,0,2,3,4,5,1
+Dominican Republic,,2,5,0,4,3,1
+Ecuador,,1,5,2,4,3,0
+Egypt,,5,4,3,2,1,0
+El Salvador,,5,4,3,2,0,1
+Eritrea,,2,3,4,5,0,1
+Estonia,,4,5,3,2,0,1
+Eswatini,,4,5,3,1,2,0
+Ethiopia,,2,5,3,4,1,0
+Faeroe Islands,,0,2,3,4,5,1
+Fiji,,0,5,2,3,4,1
+Finland,,5,4,2,0,3,1
+France,,1,2,4,5,3,0
+Gabon,,2,3,4,5,0,1
+Gambia,,0,5,3,4,1,2
+Georgia,,2,5,3,4,0,1
+Germany,,2,3,5,4,0,1
+Ghana,,1,3,4,5,0,2
+Greece,,5,4,2,3,0,1
+Greenland,,0,2,3,4,5,1
+Guam,,5,1,3,4,0,2
+Guatemala,,1,4,5,3,0,2
+Guinea,,1,5,4,3,0,2
+Guyana,,1,5,0,3,4,2
+Haiti,,3,0,4,1,5,2
+Honduras,,1,4,3,5,2,0
+Hong Kong,,2,3,4,5,1,0
+Hungary,,2,5,3,4,0,1
+Iceland,,5,1,4,3,0,2
+India,,4,3,5,2,1,0
+Indonesia,,4,5,3,2,0,1
+Iran,,2,5,3,4,0,1
+Iraq,,4,3,5,2,1,0
+Ireland,,2,5,4,3,1,0
+Israel,,0,1,3,4,5,2
+Italy,,2,5,3,4,0,1
+Jamaica,,4,5,3,1,0,2
+Japan,,4,3,5,2,0,1
+Jordan,,5,3,4,2,1,0
+Kazakhstan,,5,4,3,2,0,1
+Kenya,,2,5,4,3,0,1
+Kosovo,,5,4,3,2,0,1
+Kuwait,,5,2,4,3,0,1
+Kyrgyz Republic,,2,5,4,0,3,1
+Laos,,0,5,2,3,4,1
+Latvia,,5,4,3,0,2,1
+Lebanon,,4,3,2,5,0,1
+Lesotho,,4,3,5,1,0,2
+Liberia,,2,3,4,5,0,1
+Libya,,2,5,1,4,3,0
+Lithuania,,4,5,3,2,0,1
+Luxembourg,,5,4,3,2,0,1
+Macao,,0,2,3,4,5,1
+Madagascar,,1,4,3,0,5,2
+Malawi,,5,2,3,4,1,0
+Malaysia,,2,5,4,3,0,1
+Mali,,1,5,0,4,3,2
+Mauritania,,1,5,4,3,2,0
+Mauritius,,5,2,3,4,0,1
+Mexico,,2,5,4,3,0,1
+Moldova,,2,4,5,1,3,0
+Monaco,,5,2,3,4,0,1
+Mongolia,,2,3,4,5,1,0
+Morocco,,2,5,4,3,0,1
+Mozambique,,3,0,4,1,5,2
+Myanmar,,2,5,1,4,3,0
+Namibia,,5,4,3,2,0,1
+Nepal,,2,5,3,4,1,0
+Netherlands,,3,5,4,2,0,1
+New Zealand,,2,3,4,5,0,1
+Nicaragua,,0,1,5,4,3,2
+Niger,,2,3,4,5,0,1
+Nigeria,,4,3,5,2,1,0
+Norway,,5,4,3,2,0,1
+Oman,,2,5,4,3,0,1
+Pakistan,,5,4,3,2,0,1
+Palestine,,5,2,4,3,0,1
+Panama,,5,4,3,2,0,1
+Papua New Guinea,,5,2,3,4,0,1
+Paraguay,,5,4,1,2,3,0
+Peru,,1,4,5,3,2,0
+Philippines,,2,5,4,3,1,0
+Poland,,3,5,4,2,0,1
+Portugal,,2,5,4,3,0,1
+Puerto Rico,,3,0,4,5,2,1
+Qatar,,5,4,3,0,1,2
+Romania,,2,5,3,4,0,1
+Russia,,3,5,4,2,0,1
+Rwanda,,5,4,3,1,0,2
+San Marino,,5,2,3,4,0,1
+Saudi Arabia,,5,4,3,2,0,1
+Senegal,,1,0,5,4,3,2
+Serbia,,5,4,3,2,0,1
+Seychelles,,5,2,3,4,0,1
+Sierra Leone,,5,2,3,4,0,1
+Singapore,,0,1,4,3,5,2
+Slovak Republic,,2,5,3,4,0,1
+Slovenia,,2,5,4,3,0,1
+Solomon Islands,,0,2,3,4,5,1
+Somalia,,0,1,5,4,3,2
+South Africa,,2,5,4,3,0,1
+South Korea,,5,4,3,2,0,1
+South Sudan,,2,3,4,5,1,0
+Spain,,1,2,5,4,3,0
+Sri Lanka,,3,4,2,5,0,1
+Sudan,,4,5,0,1,3,2
+Suriname,,3,0,4,5,1,2
+Sweden,,2,4,5,3,0,1
+Switzerland,,2,4,5,3,0,1
+Syria,,1,4,5,3,0,2
+Taiwan,,2,3,4,5,0,1
+Tajikistan,,1,3,4,0,5,2
+Tanzania,,0,2,3,4,5,1
+Thailand,,5,2,3,4,0,1
+Timor-Leste,,5,2,3,4,0,1
+Togo,,4,3,0,5,1,2
+Trinidad and Tobago,,1,5,4,0,3,2
+Tunisia,,2,5,4,3,0,1
+Turkey,,2,5,4,3,0,1
+Uganda,,5,4,3,0,2,1
+Ukraine,,2,5,3,4,0,1
+United Arab Emirates,,2,1,5,3,4,0
+United Kingdom,,5,3,4,2,0,1
+United Kingdom,England,3,5,4,2,0,1
+United Kingdom,Northern Ireland,3,5,4,1,2,0
+United Kingdom,Scotland,2,1,5,3,4,0
+United Kingdom,Wales,2,5,3,4,1,0
+United States,,2,3,4,5,1,0
+United States,Alabama,4,5,3,2,0,1
+United States,Alaska,5,4,3,2,0,1
+United States,Arizona,2,4,3,5,0,1
+United States,Arkansas,5,4,3,2,0,1
+United States,California,5,4,3,2,0,1
+United States,Colorado,2,5,4,3,0,1
+United States,Connecticut,2,5,4,3,0,1
+United States,Delaware,5,4,3,2,0,1
+United States,Florida,2,4,5,3,0,1
+United States,Georgia,2,5,4,3,0,1
+United States,Hawaii,0,4,5,3,1,2
+United States,Idaho,2,5,3,4,0,1
+United States,Illinois,2,3,5,4,0,1
+United States,Indiana,2,5,3,4,0,1
+United States,Iowa,2,5,4,3,1,0
+United States,Kansas,2,5,4,3,0,1
+United States,Kentucky,2,5,3,4,0,1
+United States,Louisiana,2,5,4,3,1,0
+United States,Maine,5,4,3,2,0,1
+United States,Maryland,2,5,4,3,0,1
+United States,Massachusetts,5,2,3,4,0,1
+United States,Michigan,2,5,4,3,0,1
+United States,Minnesota,2,5,3,4,0,1
+United States,Mississippi,2,5,4,3,0,1
+United States,Missouri,2,0,5,4,3,1
+United States,Montana,2,1,5,4,3,0
+United States,Nebraska,2,5,4,3,1,0
+United States,Nevada,5,4,3,2,0,1
+United States,New Hampshire,5,3,4,2,0,1
+United States,New Jersey,2,5,3,4,0,1
+United States,New Mexico,2,5,4,3,0,1
+United States,New York,2,5,3,4,0,1
+United States,North Carolina,2,4,5,3,0,1
+United States,North Dakota,2,5,4,3,1,0
+United States,Ohio,2,3,5,4,0,1
+United States,Oklahoma,2,5,4,3,0,1
+United States,Oregon,5,4,3,2,0,1
+United States,Pennsylvania,2,5,3,4,0,1
+United States,Rhode Island,2,5,4,3,0,1
+United States,South Carolina,5,2,4,3,0,1
+United States,South Dakota,2,1,5,4,3,0
+United States,Tennessee,2,5,4,3,0,1
+United States,Texas,2,4,3,5,0,1
+United States,Utah,2,5,4,3,0,1
+United States,Vermont,2,3,4,5,1,0
+United States,Virgin Islands,0,5,2,3,4,1
+United States,Virginia,2,5,4,3,0,1
+United States,Washington,5,2,4,3,0,1
+United States,Washington DC,5,4,3,0,1,2
+United States,West Virginia,5,4,3,2,0,1
+United States,Wisconsin,2,4,5,3,1,0
+United States,Wyoming,5,4,3,2,0,1
+Uruguay,,4,5,3,2,0,1
+Uzbekistan,,4,3,5,0,2,1
+Vanuatu,,0,2,3,4,5,1
+Venezuela,,5,4,1,3,2,0
+Vietnam,,5,2,3,4,0,1
+Yemen,,5,2,3,4,0,1
+Zambia,,1,5,4,3,2,0
+Zimbabwe,,5,3,4,1,0,2
