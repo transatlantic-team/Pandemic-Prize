@@ -63,7 +63,7 @@ setup(
         'scikit-learn==0.23.2',
         'scipy==1.5.2',
         'setuptools==41.0.0',
-        'tensorflow==2.2.1'
+        'tensorflow==2.4.0'
     ],
     description='Contains sample code and notebooks '
                 'for developing and validating entries for the Cognizant COVID X-Prize.',
