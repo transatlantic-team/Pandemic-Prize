@@ -6,12 +6,15 @@ __pycache__/
 # Local folders
 data/
 refs/
+docs/
+dev/
 owid-data/
 venv/
 .vscode/
 *.ipynb_checkpoints/
 */__pycache__
 *.pyc
+*.egg-info/
 
 predictions/
 prescriptions/
