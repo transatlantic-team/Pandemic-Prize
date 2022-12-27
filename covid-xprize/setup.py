@@ -62,7 +62,7 @@ setup(
         'pandas==1.1.2',
         'scikit-learn==0.23.2',
         'scipy==1.5.2',
-        'setuptools==41.0.0',
+        'setuptools==65.5.1',
         'tensorflow==2.2.1'
     ],
     description='Contains sample code and notebooks '
